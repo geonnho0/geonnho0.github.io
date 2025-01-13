@@ -14,6 +14,7 @@ permalink: /tags/
 {% for post in tag[1] %}
 
 - [{{ post.title }}]({% include relative %}{{ post.url }})
+
   {{ post.date | date: "%b %-d, %Y" }}
   {% endfor %}
   {% endfor %}
