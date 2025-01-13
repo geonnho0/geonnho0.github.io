@@ -13,8 +13,6 @@ permalink: /tags/
 {{ tag[1] | size }} posts
 {% for post in tag[1] %}
 
-- [{{ post.title }}]({% include relative %}{{ post.url }})
-
-  {{ post.date | date: "%b %-d, %Y" }}
+- {{ post.date | date: "%b %-d, %Y" }} | [{{ post.title }}]({% include relative %}{{ post.url }})
   {% endfor %}
   {% endfor %}
